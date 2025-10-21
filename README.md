@@ -40,10 +40,29 @@ cd string-analyzer-service/app
 ```
 
 ### 2️⃣ Create Virtual Environment
-
 ```
 python -m venv venv
 venv\Scripts\activate      # Windows
 # source venv/bin/activate  # macOS/Linux
 ```
+
+### 3️⃣ Install Dependencies
+```
+pip install -r requirements.txt
+```
+### 4️⃣ Run Locally
+From the project root:
+
+```
+uvicorn app.main:app --reload
+```
+Server will start at:
+👉 http://127.0.0.1:8000
+
+Swagger Docs: http://127.0.0.1:8000/docs
+
+🧠 API Endpoints
+🔹 1. Create & Analyze String
+
+POST /strings
 
