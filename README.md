@@ -61,8 +61,39 @@ Server will start at:
 
 Swagger Docs: http://127.0.0.1:8000/docs
 
-🧠 API Endpoints
-🔹 1. Create & Analyze String
+### 🧠 API Endpoints
 
+## 🔹 1. Create & Analyze String
 POST /strings
+
+```
+{
+  "value": "racecar"
+}
+```
+
+Response 201
+
+```JSON
+{
+  "id": "sha256_hash_value",
+  "value": "racecar",
+  "properties": {
+    "length": 7,
+    "is_palindrome": true,
+    "unique_characters": 5,
+    "word_count": 1,
+    "sha256_hash": "abc123...",
+    "character_frequency_map": { "r": 2, "a": 2, "c": 2, "e": 1 }
+  },
+  "created_at": "2025-10-21T14:00:00Z"
+}
+```
+
+
+
+
+
+
+
 
