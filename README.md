@@ -104,7 +104,7 @@ Returns matching strings and applied filters.
 
 GET ``/strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings``
 
-Response
+## Response
 ```JSON
 {
   "data": [...],
@@ -128,7 +128,7 @@ Supported query examples:
 | “palindromic strings that contain the first vowel” | `is_palindrome=true, contains_character=a` |
 
 
-##🔹 5. Delete String
+## 5. Delete String
 
 DELETE ``/strings/{string_value} → 204 No Content``
 
@@ -163,7 +163,7 @@ fastapi
 uvicorn
 ```
 
-# Install:
+### Install:
 ``` bash
 pip install fastapi uvicorn
 ```
@@ -179,9 +179,9 @@ uvicorn app.main:app --host 0.0.0.0 --port $PORT
 ```
 ###🧠 Author
 
-# Name: Olayide Olatunji
-# Email: oloyeadz@gmail.com
-# Stack: Python / FastAPI
+Name: Olayide Olatunji
+Email: oloyeadz@gmail.com
+Stack: Python / FastAPI
 
 
 
